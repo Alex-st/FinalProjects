@@ -1,0 +1,2 @@
+This is a popular Java Generics interview question. It comes in my mind little late. It didn't come when I first know about generics in Java but a while later, nevertheless I find it quite useful to know about how generics works in java behind the scene. The buzzing keyword is "Type Erasure", you guessed it right it’s the same thing we used to in our schools for erasing our mistakes in writing or drawing :). Same thing is done by Java compiler, when it sees code  written using Generics it completely erases that code and covert it into raw type i.e. code without Generics.
+

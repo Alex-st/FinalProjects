@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.yazatebe.org.ua planes.xsd"
+    xmlns:params="http://www.yazatebe.org.ua" >
+    <plane id="a001">
+        <model>Supermarine Spitfire</model>
+        <origin>GB</origin>
+        <type>fighter</type>
+        <parameters>
+            <params:Length>4</params:Length>
+            <params:Width>5</params:Width>
+            <params:Height>3</params:Height>
+        </parameters>
+        <price>500</price>
+    </plane>
+    <plane id="b2">
+        <model>Nortrope B2</model>
+        <origin>USA</origin>
+        <type>bomber</type>
+        <parameters>
+            <params:Length>10</params:Length>
+            <params:Width>15</params:Width>
+            <params:Height>5</params:Height>
+        </parameters>
+        <price>5500</price>
+    </plane>
+</root>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:params="http://www.yazatebe.org.ua">
+    <xs:import namespace="http://www.yazatebe.org.ua" schemaLocation="params.xsd"/>
+    
+    <xs:element name="root" type="rootType" />
+    <xs:complexType name="rootType">
+        <xs:sequence>
+            <xs:element name="plane" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        
+                        <xs:element name="model" type="xs:string"/>
+                        <xs:element name="origin" type="xs:string"/>
+                        
+                        <xs:element name="type">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="bomber"/>
+                                    <xs:enumeration value="interceptor"/>
+                                    <xs:enumeration value="fighter"/>
+                                </xs:restriction>
+                            </xs:simpleType> 
+                        </xs:element>
+                        
+                        <xs:element name="parameters" type="params:Params"/>
+                        <xs:element name="price" type="xs:int"/>
+                        
+                    </xs:sequence>       
+                    <xs:attribute name="id" type="xs:ID" use="required"/> 
+                </xs:complexType> 
+                
+            </xs:element>   
+        </xs:sequence>
+        
+        
+    </xs:complexType>
+    
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="15.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="newProject.xpr">
+        <file name="params.xsd"/>
+        <file name="planes.xsd"/>
+        <file name="planes.xsl"/>
+        <file name="planes2.xsd"/>
+        <file name="worklist.xml"/>
+        <file name="worklist2.xml"/>
+    </projectTree>
+</project>
