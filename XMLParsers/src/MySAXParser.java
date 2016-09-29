@@ -54,7 +54,7 @@ public class MySAXParser extends DefaultHandler {
         }
      @Override
      public void startElement(String uri,String localName,
-                                 String qName, Attributes attrs){
+                                 String qName, Attributes attrs) {
 //            System.out.println("uri "+uri);
             //uri = "http://www.w3.org/2001/XMLSchema-instance";
             //uri = "http://www.yazatebe.org.ua";
@@ -93,7 +93,7 @@ public class MySAXParser extends DefaultHandler {
      }
 
       @Override
-      public void characters(char[] text,int start, int len){
+      public void characters(char[] text,int start, int len) {
             String s=new String(text,start,len);
 
             switch(flag){
@@ -132,7 +132,7 @@ public class MySAXParser extends DefaultHandler {
 
       @Override
       public void endElement(String uri,String localName,
-                               String qName){
+                               String qName) {
             if (qName == "plane"){
                 l.add(p);
                 p=null;
@@ -164,12 +164,10 @@ public class MySAXParser extends DefaultHandler {
             System.out.println("file not found");
             return false;
         }
-
         return true;
     }
 
     public void print() {
-
         for(Plane p:l){
             System.out.println("-----------------------");
             System.out.println(p.getId());

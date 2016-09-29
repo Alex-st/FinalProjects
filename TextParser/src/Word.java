@@ -14,9 +14,7 @@ public class Word extends Textable{
     }
 
     public Word(Iterable<Symbol> s) {
-
-//        word = new ArrayList<Element>(Arrays.asList(array))
-
+		
         word = new ArrayList<Symbol>();
         for (Symbol i : s) {
             word.add(i);
@@ -63,7 +61,6 @@ public class Word extends Textable{
             if (!word.get(i).equals(temp.word.get(i)))
                 return false;
         }
-
         return true;
     }
 

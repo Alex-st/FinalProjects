@@ -10,7 +10,7 @@ public class AviaCompany {
         planes = new ArrayList<Plane>();
     }
 
-    public void addPlane(){
+    public void addPlane() {
         System.out.println("Input your plane");
         System.out.println("Pass - 1; Cargo -2");
         Scanner in = new Scanner(System.in);
@@ -46,23 +46,21 @@ public class AviaCompany {
         }
     }
 
-    public int commonNumberOfPassengers(){
+    public int commonNumberOfPassengers() {
         int sum = 0;
 
         for (Plane i:planes) {
             sum+=i.getPassengerNumber();
         }
-
         return sum;
     }
 
-    public int commonCapacity(){
+    public int commonCapacity() {
         int sum = 0;
 
         for (Plane i:planes) {
             sum+=i.getCapacity();
         }
-
         return sum;
     }
 
@@ -78,7 +76,7 @@ public class AviaCompany {
             System.out.println(j.toString());
     }
 
-    public void sortPlanesByCapacity(){
+    public void sortPlanesByCapacity() {
         Collections.sort(planes, Plane.BY_CAPACITY);
         for (Plane i : planes)
             System.out.println(i.toString());
@@ -91,19 +89,12 @@ public class AviaCompany {
 
     public static void main(String[] args) {
         AviaCompany test = new AviaCompany();
-//        test.addPlane();
-//        System.out.println("---------------------");
 
         test.planes.add(new PassPlane("PassPlane1", 200, 1000, 5000, 500));
         test.planes.add(new CargoPlane("CargoPlane1", 5000, 10000, 700));
         test.planes.add(new PassPlane("PassPlane2", 250, 1500, 7000, 600));
         test.planes.add(new CargoPlane("CargoPlane2", 5500, 8000, 650));
 
-//        System.out.println(test.commonCapacity());
-//        System.out.println(test.commonNumberOfPassengers());
-        //test.getFuelConsumptionRange(550, 651);
         test.sortPlanesByCapacity();
-
-      //  test.showAllPlanes();
     }
 }

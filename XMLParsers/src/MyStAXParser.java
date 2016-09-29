@@ -26,7 +26,7 @@ public class MyStAXParser {
      */
     public static final Comparator<Plane> BY_ID = new ByID();
 
-    private static class ByID implements Comparator<Plane>{
+    private static class ByID implements Comparator<Plane> {
         public int compare(Plane one, Plane two){
             return one.id.compareTo(two.id);
         }
@@ -133,7 +133,6 @@ public class MyStAXParser {
 
     //Print all parsed objects
     public void print() {
-
         Collections.sort(plList, MyStAXParser.BY_ID);
 
         for ( Plane p : plList){

@@ -9,14 +9,15 @@ public class PassPlane extends Plane {
         this.model = name;
     }
 
-    public PassPlane(String name, int passengers, int capacity, int flyingRange, int fuelConsumption){
+    public PassPlane(String name, int passengers, int capacity, int flyingRange, int fuelConsumption) {
         this.model = name;
         this.passengerNumber = passengers;
         this.capacity = capacity;
         this.flyingRange = flyingRange;
         this.fuelConsumption = fuelConsumption;
     }
-
+	
+	@Override
     public String toString(){
         return (model+": Capacity:"+capacity+", Range:"+flyingRange+", Consumption:"+fuelConsumption);
     }

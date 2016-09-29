@@ -11,7 +11,7 @@ public class Plane {
 
     public static final Comparator<Plane> BY_CAPACITY = new ByCapacity();
 
-    private static class ByCapacity implements Comparator<Plane>{
+    private static class ByCapacity implements Comparator<Plane> {
          public int compare(Plane one, Plane two){
             return one.capacity - two.capacity;
         }
